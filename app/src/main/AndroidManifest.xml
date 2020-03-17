@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".SubjectListActivity"></activity>
+        <activity android:name=".LikeDataShower"></activity>
+        <activity android:name=".SubjectListActivity" />
         <activity android:name=".BlessingsShowerActivity" />
         <activity android:name=".HisnulMulsimActivity" />
         <activity android:name=".MainActivity">

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LikeDataShower">
+
+    <TextView
+        android:id="@+id/blessingShowerHeaderTextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="#E98D09"
+        android:textColor="#0A0701"
+        android:textStyle="bold"
+
+        />
+
+    <WebView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webviewid"
+
+        />
+
+</LinearLayout>

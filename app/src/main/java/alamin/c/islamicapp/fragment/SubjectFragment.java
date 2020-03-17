@@ -31,21 +31,22 @@ public class SubjectFragment extends Fragment {
             ,"যিকির-ঘুম"
             ,"সামাজিক"
             ,"হজ্ব-সিয়াম"
-            ,"কুরআন "
-            ,"সালাত "
+            ,"কুরআন"
+            ,"সালাত"
             ,"অনুভূতি"
             ,"ইমান-সুরক্ষা"
             ,"অসুস্থতা"
     };
-    int[] images={R.drawable.list_backgroun2d,
-            R.drawable.list_background,
-            R.drawable.list_backgroun2d,
-            R.drawable.list_background,
-            R.drawable.list_backgroun2d,
-            R.drawable.list_background,
-            R.drawable.list_backgroun2d,
-            R.drawable.list_background,
-            R.drawable.list_backgroun2d
+    int[] images={
+            R.drawable.daily_bn,
+            R.drawable.zikr,
+            R.drawable.social,
+            R.drawable.hajj_fasting,
+            R.drawable.quranic,
+            R.drawable.prayer,
+            R.drawable.feeling,
+            R.drawable.iman_protection,
+            R.drawable.illness
     };
 
 
@@ -67,7 +68,6 @@ public class SubjectFragment extends Fragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getContext(), ""+values[position], Toast.LENGTH_SHORT).show();
                 if(position==0){
                     Intent intent=new Intent(getContext(), SubjectListActivity.class);
                     intent.putExtra("value",values[position]);
@@ -81,6 +81,26 @@ public class SubjectFragment extends Fragment {
                     intent.putExtra("value",values[position]);
                     startActivity(intent);
                 }else if(position==3){
+                    Intent intent=new Intent(getContext(), SubjectListActivity.class);
+                    intent.putExtra("value",values[position]);
+                    startActivity(intent);
+                }else if(position==4){
+                    Intent intent=new Intent(getContext(), SubjectListActivity.class);
+                    intent.putExtra("value",values[position]);
+                    startActivity(intent);
+                }else if(position==5){
+                    Intent intent=new Intent(getContext(), SubjectListActivity.class);
+                    intent.putExtra("value",values[position]);
+                    startActivity(intent);
+                }else if(position==6){
+                    Intent intent=new Intent(getContext(), SubjectListActivity.class);
+                    intent.putExtra("value",values[position]);
+                    startActivity(intent);
+                }else if(position==7){
+                    Intent intent=new Intent(getContext(), SubjectListActivity.class);
+                    intent.putExtra("value",values[position]);
+                    startActivity(intent);
+                }else if(position==8){
                     Intent intent=new Intent(getContext(), SubjectListActivity.class);
                     intent.putExtra("value",values[position]);
                     startActivity(intent);

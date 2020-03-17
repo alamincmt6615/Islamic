@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#F0B436"
+    android:gravity="center"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".fragment.SubjectFragment">
     <TextView
@@ -19,6 +20,7 @@
         />
 
     <GridView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/gridviewid"

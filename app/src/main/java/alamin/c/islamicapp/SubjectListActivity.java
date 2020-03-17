@@ -16,6 +16,7 @@ public class SubjectListActivity extends AppCompatActivity {
     private BlessingsAdapters adapters;
     private  String[] value;
     private  String[] serial;
+    private  String[] changeIntentvalue;
 
 
     @Override
@@ -26,6 +27,7 @@ public class SubjectListActivity extends AppCompatActivity {
 
         final String passvalue=getIntent().getStringExtra("value");
 
+        this.setTitle(passvalue);
     if(passvalue.equals("নিত্যদিন")){
         value=getResources().getStringArray(R.array.dailyvalue);
         serial=getResources().getStringArray(R.array.dailyserial);
@@ -39,6 +41,28 @@ public class SubjectListActivity extends AppCompatActivity {
     } else if(passvalue.equals("হজ্ব-সিয়াম")){
         value=getResources().getStringArray(R.array.hazzfastingvalue);
         serial=getResources().getStringArray(R.array.hazzfastingserial);
+    }
+ else if(passvalue.equals("কুরআন")){
+        value=getResources().getStringArray(R.array.quranvalue);
+        serial=getResources().getStringArray(R.array.quranserial);
+        changeIntentvalue=getResources().getStringArray(R.array.quranchangeintent);
+    }
+else if(passvalue.equals("সালাত")){
+        value=getResources().getStringArray(R.array.prayervalue);
+        serial=getResources().getStringArray(R.array.prayerseiral);
+        changeIntentvalue=getResources().getStringArray(R.array.prayerchangeIntent);
+    }else if(passvalue.equals("অনুভূতি")){
+        value=getResources().getStringArray(R.array.feelingsvalue);
+        serial=getResources().getStringArray(R.array.feelingsserial);
+        changeIntentvalue=getResources().getStringArray(R.array.feelingschangeIntent);
+    }else if(passvalue.equals("ইমান-সুরক্ষা")){
+        value=getResources().getStringArray(R.array.imanValue);
+        serial=getResources().getStringArray(R.array.imanserial);
+        changeIntentvalue=getResources().getStringArray(R.array.imanchangeIntent);
+    }else if(passvalue.equals("অসুস্থতা")){
+        value=getResources().getStringArray(R.array.illnessValue);
+        serial=getResources().getStringArray(R.array.illnessserial);
+        changeIntentvalue=getResources().getStringArray(R.array.illnessChangeIntent);
     }
 
 
@@ -67,6 +91,16 @@ public class SubjectListActivity extends AppCompatActivity {
                             socialIntent(position);
                     }else if(passvalue.equals("হজ্ব-সিয়াম")){
                         hazzfastingIntent(position);
+                    }else if(passvalue.equals("কুরআন")){
+                        quranIntent(position);
+                    }else if(passvalue.equals("সালাত")){
+                        prayerIntent(position);
+                    }else if(passvalue.equals("অনুভূতি")){
+                        feelingschangeIntent(position);
+                    }else if(passvalue.equals("ইমান-সুরক্ষা")){
+                        imanChangeIntent(position);
+                    }else if(passvalue.equals("অসুস্থতা")){
+                        illnessChangeIntent(position);
                     }
             }
         });
@@ -77,6 +111,427 @@ public class SubjectListActivity extends AppCompatActivity {
 
     }
 
+    public void prayerIntent(int position){
+        if(position==0){
+            quranIntent2(position);
+        }
+        else if(position==1){
+            quranIntent2(position);
+        }else if(position==2){
+            quranIntent2(position);
+        }else if(position==3){
+            quranIntent2(position);
+        }else if(position==4){
+            quranIntent2(position);
+        }else if(position==5){
+            quranIntent2(position);
+        }else if(position==6){
+            quranIntent2(position);
+        }else if(position==7){
+            quranIntent2(position);
+        }else if(position==8){
+            quranIntent2(position);
+        }else if(position==9){
+            quranIntent2(position);
+        }else if(position==10){
+            quranIntent2(position);
+        }else if(position==11){
+            quranIntent2(position);
+        }else if(position==12){
+            quranIntent2(position);
+        }else if(position==13){
+            quranIntent2(position);
+        }else if(position==14){
+            quranIntent2(position);
+        }else if(position==15){
+            quranIntent2(position);
+        }else if(position==16){
+            quranIntent2(position);
+        }else if(position==17){
+            quranIntent2(position);
+        }else if(position==18){
+            quranIntent2(position);
+        }else if(position==19){
+            quranIntent2(position);
+        }else if(position==20){
+            quranIntent2(position);
+        }else if(position==21){
+            quranIntent2(position);
+        }else if(position==22){
+            quranIntent2(position);
+        }else if(position==23){
+            quranIntent2(position);
+        }else if(position==24){
+            quranIntent2(position);
+        }else if(position==25){
+            quranIntent2(position);
+        }else if(position==26){
+            quranIntent2(position);
+        }else if(position==27){
+            quranIntent2(position);
+        }else if(position==28){
+            quranIntent2(position);
+        }else if(position==29){
+            quranIntent2(position);
+        }else if(position==30){
+            quranIntent2(position);
+        }else if(position==31){
+            quranIntent2(position);
+        }else if(position==32){
+            quranIntent2(position);
+        }else if(position==33){
+            quranIntent2(position);
+        }else if(position==34){
+            quranIntent2(position);
+        }else if(position==35){
+            quranIntent2(position);
+        }else if(position==36){
+            quranIntent2(position);
+        }else if(position==37){
+            quranIntent2(position);
+        }else if(position==38){
+            quranIntent2(position);
+        }else if(position==39){
+            quranIntent2(position);
+        }else if(position==40){
+            quranIntent2(position);
+        }else if(position==41){
+            quranIntent2(position);
+        }else if(position==42){
+            quranIntent2(position);
+        }else if(position==43){
+            quranIntent2(position);
+        }else if(position==44){
+            quranIntent2(position);
+        }else if(position==45){
+            quranIntent2(position);
+        }else if(position==46){
+            quranIntent2(position);
+        }else if(position==47){
+            quranIntent2(position);
+        }else if(position==48){
+            quranIntent2(position);
+        }else if(position==49){
+            quranIntent2(position);
+        }else if(position==50){
+            quranIntent2(position);
+        }else if(position==51){
+            quranIntent2(position);
+        }else if(position==52){
+            quranIntent2(position);
+        }else if(position==53){
+            quranIntent2(position);
+        }else if(position==54){
+            quranIntent2(position);
+        }else if(position==55){
+            quranIntent2(position);
+        }else if(position==56){
+            quranIntent2(position);
+        }else if(position==57){
+            quranIntent2(position);
+        }else if(position==58){
+            quranIntent2(position);
+        }else if(position==59){
+            quranIntent2(position);
+        }else if(position==60){
+            quranIntent2(position);
+        }else if(position==61){
+            quranIntent2(position);
+        }
+    }
+   private void quranIntent(int position) {
+        if(position==0){
+            quranIntent2(position);
+        }
+        else if(position==1){
+            quranIntent2(position);
+        }else if(position==2){
+            quranIntent2(position);
+        }else if(position==3){
+            quranIntent2(position);
+        }else if(position==4){
+            quranIntent2(position);
+        }else if(position==5){
+            quranIntent2(position);
+        }else if(position==6){
+            quranIntent2(position);
+        }else if(position==7){
+            quranIntent2(position);
+        }else if(position==8){
+            quranIntent2(position);
+        }else if(position==9){
+            quranIntent2(position);
+        }else if(position==10){
+            quranIntent2(position);
+        }else if(position==11){
+            quranIntent2(position);
+        }else if(position==12){
+            quranIntent2(position);
+        }else if(position==13){
+            quranIntent2(position);
+        }else if(position==14){
+            quranIntent2(position);
+        }else if(position==15){
+            quranIntent2(position);
+        }else if(position==16){
+            quranIntent2(position);
+        }else if(position==17){
+            quranIntent2(position);
+        }else if(position==18){
+            quranIntent2(position);
+        }else if(position==19){
+            quranIntent2(position);
+        }else if(position==20){
+            quranIntent2(position);
+        }else if(position==21){
+            quranIntent2(position);
+        }else if(position==22){
+            quranIntent2(position);
+        }else if(position==23){
+            quranIntent2(position);
+        }else if(position==24){
+            quranIntent2(position);
+        }else if(position==25){
+            quranIntent2(position);
+        }else if(position==26){
+            quranIntent2(position);
+        }else if(position==27){
+            quranIntent2(position);
+        }else if(position==28){
+            quranIntent2(position);
+        }else if(position==29){
+            quranIntent2(position);
+        }else if(position==30){
+            quranIntent2(position);
+        }else if(position==31){
+            quranIntent2(position);
+        }else if(position==32){
+            quranIntent2(position);
+        }else if(position==33){
+            quranIntent2(position);
+        }else if(position==34){
+            quranIntent2(position);
+        }else if(position==35){
+            quranIntent2(position);
+        }else if(position==36){
+            quranIntent2(position);
+        }else if(position==37){
+            quranIntent2(position);
+        }else if(position==38){
+            quranIntent2(position);
+        }else if(position==39){
+            quranIntent2(position);
+        }else if(position==40){
+            quranIntent2(position);
+        }else if(position==41){
+            quranIntent2(position);
+        }else if(position==42){
+            quranIntent2(position);
+        }else if(position==43){
+            quranIntent2(position);
+        }else if(position==44){
+            quranIntent2(position);
+        }else if(position==45){
+            quranIntent2(position);
+        }else if(position==46){
+            quranIntent2(position);
+        }else if(position==47){
+            quranIntent2(position);
+        }else if(position==48){
+            quranIntent2(position);
+        }else if(position==49){
+            quranIntent2(position);
+        }else if(position==50){
+            quranIntent2(position);
+        }else if(position==51){
+            quranIntent2(position);
+        }else if(position==52){
+            quranIntent2(position);
+        }else if(position==53){
+            quranIntent2(position);
+        }else if(position==54){
+            quranIntent2(position);
+        }else if(position==55){
+            quranIntent2(position);
+        }else if(position==56){
+            quranIntent2(position);
+        }else if(position==57){
+            quranIntent2(position);
+        }else if(position==58){
+            quranIntent2(position);
+        }else if(position==59){
+            quranIntent2(position);
+        }else if(position==60){
+            quranIntent2(position);
+        }else if(position==61){
+            quranIntent2(position);
+        }else if(position==62){
+            quranIntent2(position);
+        }else if(position==63){
+            quranIntent2(position);
+        }else if(position==64){
+            quranIntent2(position);
+        }else if(position==65){
+            quranIntent2(position);
+        }else if(position==66){
+            quranIntent2(position);
+        }else if(position==67){
+            quranIntent2(position);
+        }else if(position==68){
+            quranIntent2(position);
+        }else if(position==69){
+            quranIntent2(position);
+        }else if(position==70){
+            quranIntent2(position);
+        }else if(position==71){
+            quranIntent2(position);
+        }else if(position==72){
+            quranIntent2(position);
+        }else if(position==73){
+            quranIntent2(position);
+        }else if(position==74){
+            quranIntent2(position);
+        }else if(position==75){
+            quranIntent2(position);
+        }else if(position==76){
+            quranIntent2(position);
+        }
+    }
+    public void feelingschangeIntent(int position){
+        if(position==0){
+            quranIntent2(position);
+        }
+        else if(position==1){
+            quranIntent2(position);
+        }else if(position==2){
+            quranIntent2(position);
+        }else if(position==3){
+            quranIntent2(position);
+        }else if(position==4){
+            quranIntent2(position);
+        }else if(position==5){
+            quranIntent2(position);
+        }else if(position==6){
+            quranIntent2(position);
+        }else if(position==7){
+            quranIntent2(position);
+        }else if(position==8){
+            quranIntent2(position);
+        }else if(position==9){
+            quranIntent2(position);
+        }else if(position==10){
+            quranIntent2(position);
+        }else if(position==11){
+            quranIntent2(position);
+        }else if(position==12){
+            quranIntent2(position);
+        }else if(position==13){
+            quranIntent2(position);
+        }else if(position==14){
+            quranIntent2(position);
+        }else if(position==15){
+            quranIntent2(position);
+        }
+    }
+   public void imanChangeIntent(int position){
+       if(position==0){
+           quranIntent2(position);
+       }
+       else if(position==1){
+           quranIntent2(position);
+       }else if(position==2){
+           quranIntent2(position);
+       }else if(position==3){
+           quranIntent2(position);
+       }else if(position==4){
+           quranIntent2(position);
+       }else if(position==5){
+           quranIntent2(position);
+       }else if(position==6){
+           quranIntent2(position);
+       }else if(position==7){
+           quranIntent2(position);
+       }else if(position==8){
+           quranIntent2(position);
+       }else if(position==9){
+           quranIntent2(position);
+       }else if(position==10){
+           quranIntent2(position);
+       }else if(position==11){
+           quranIntent2(position);
+       }else if(position==12){
+           quranIntent2(position);
+       }else if(position==13){
+           quranIntent2(position);
+       }else if(position==14){
+           quranIntent2(position);
+       }else if(position==15){
+           quranIntent2(position);
+       }else if(position==16){
+           quranIntent2(position);
+       }else if(position==17){
+           quranIntent2(position);
+       }else if(position==18){
+           quranIntent2(position);
+       }
+    }
+    public void illnessChangeIntent(int position){
+        if(position==0){
+            quranIntent2(position);
+        }
+        else if(position==1){
+            quranIntent2(position);
+        }else if(position==2){
+            quranIntent2(position);
+        }else if(position==3){
+            quranIntent2(position);
+        }else if(position==4){
+            quranIntent2(position);
+        }else if(position==5){
+            quranIntent2(position);
+        }else if(position==6){
+            quranIntent2(position);
+        }else if(position==7){
+            quranIntent2(position);
+        }else if(position==8){
+            quranIntent2(position);
+        }else if(position==9){
+            quranIntent2(position);
+        }else if(position==10){
+            quranIntent2(position);
+        }else if(position==11){
+            quranIntent2(position);
+        }else if(position==12){
+            quranIntent2(position);
+        }else if(position==13){
+            quranIntent2(position);
+        }else if(position==14){
+            quranIntent2(position);
+        }else if(position==15){
+            quranIntent2(position);
+        }else if(position==16){
+            quranIntent2(position);
+        }else if(position==17){
+            quranIntent2(position);
+        }else if(position==18){
+            quranIntent2(position);
+        }
+        else if(position==19){
+            quranIntent2(position);
+        }else if(position==20){
+            quranIntent2(position);
+        }else if(position==21){
+            quranIntent2(position);
+        }
+    }
+    public void  quranIntent2(int position){
+
+        Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+        intent.putExtra("url",changeIntentvalue[position]+".html");
+        intent.putExtra("headertext",value[position]);
+        intent.putExtra("serial",serial[position]);
+        startActivity(intent);
+    }
 
 
     public void dailyIntent(int position){
@@ -797,7 +1252,127 @@ public class SubjectListActivity extends AppCompatActivity {
 
 
     }
-    public void hazzfastingIntent(int position){}
+    public void hazzfastingIntent(int position){
+        if(position==0){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","170.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }
+        else if(position==1){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","171.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }
+        else if(position==2){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","172.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==3){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","173.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==4){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","174.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==5){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","175.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==6){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","176.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==7){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","179.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==8){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","180.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==9){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","181.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==10){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","222.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==11){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","223.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==12){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","224.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==13){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","225.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==14){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","226.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==15){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","227.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==16){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","228.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==17){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","234.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }else if(position==18){
+            Intent intent=new Intent(SubjectListActivity.this, BlessingsShowerActivity.class);
+            intent.putExtra("url","327.html");
+            intent.putExtra("headertext",value[position]);
+            intent.putExtra("serial",serial[position]);
+            startActivity(intent);
+        }
+
+
+    }
 
 
 }

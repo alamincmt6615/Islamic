@@ -11,10 +11,9 @@
         android:layout_width="match_parent"
         app:tabTextColor="#fff"
         android:background="#072D99"
-        app:tabSelectedTextColor="#F8F7F7"
         android:layout_height="wrap_content"
         android:id="@+id/main_tabsid"
-
+        app:tabTextAppearance="@style/MyCustomTabText"
         />
 
 <androidx.viewpager.widget.ViewPager
