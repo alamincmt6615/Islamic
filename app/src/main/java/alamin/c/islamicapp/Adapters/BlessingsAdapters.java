@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 import alamin.c.islamicapp.R;
 
 public class BlessingsAdapters extends RecyclerView.Adapter<BlessingsAdapters.MyViewHolder> {
@@ -50,6 +52,13 @@ public class BlessingsAdapters extends RecyclerView.Adapter<BlessingsAdapters.My
     @Override
     public int getItemCount() {
         return serial.length;
+    }
+    public void filterList(ArrayList<String> filterdNames) {
+        for (int i=0; i<filterdNames.size(); i++){
+            this.values = filterdNames.toArray(new String[i]);
+            notifyDataSetChanged();
+        }
+
     }
 
     public class MyViewHolder  extends  RecyclerView.ViewHolder implements View.OnClickListener {

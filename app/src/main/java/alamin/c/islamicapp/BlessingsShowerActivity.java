@@ -21,11 +21,11 @@ import alamin.c.islamicapp.Adapters.MyDatabaseHelper;
 public class BlessingsShowerActivity extends AppCompatActivity {
 
 
+
     private WebView webView;
     private TextView textView;
     MyDatabaseHelper myDatabaseHelper;
     LastReadDatabaseHelper lastReadDatabaseHelper;
-
 
 
     String url;
@@ -84,7 +84,7 @@ public class BlessingsShowerActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
 
-        getMenuInflater().inflate(R.menu.main_menu,menu);
+        getMenuInflater().inflate(R.menu.choicemenu,menu);
 
 
         return  true;

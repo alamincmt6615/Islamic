@@ -1,9 +1,584 @@
 <resources>
-    <string name="app_name">IslamicApp</string>
+    <string name="app_name" translatable="false">IslamicApp</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="subject_text">আর আপনি আপনার রব্বকে স্বরণ করুন মনে মনে,মিনতি ও ভিতিসহকারে , অনুচ্চস্বরে ; মিনতি ও ভীতি সহকারে, অনুচ্চস্বরে ; সকালে ও সন্ধ্যায় । আর উদাসীনদের অন্তর্ভুক্ত হবেন না। [৭:২০৫]</string>
+    <string name="subject_text">আর আপনি আপনার রব্বকে স্বরণ করুন মনে  মনে,মিনতি ও ভিতিসহকারে , অনুচ্চস্বরে ; মিনতি ও ভীতি সহকারে, অনুচ্চস্বরে ; সকালে ও সন্ধ্যায় । আর উদাসীনদের অন্তর্ভুক্ত হবেন না। [৭:২০৫]</string>
+
+    <string-array name="sura_name_list">
+        <item>সূরা আল ফাতিহা</item>
+        <item>সূরা আল বাক্বারাহ</item>
+        <item>সূরা আল ইমরান</item>
+        <item>সূরা আন নিসা</item>
+        <item>সূরা আল মায়েদাহ</item>
+        <item>সূরা আল আন-আম</item>
+        <item>সূরা আল আ’রাফ</item>
+        <item>সূরা আল-আনফাল</item>
+        <item> সূরা আত-তাওবাহ </item>
+        <item> সূরা ইউনুস</item>
+        <item>সূরা হুদ</item>
+        <item> সূরা ইউসুফ</item>
+        <item>  সূরা আর-রাদ</item>
+        <item>  সূরা ইবরাহিম</item>
+        <item> সূরা আল-হিজর</item>
+        <item>সূরা আন-নাহাল</item>
+        <item> সূরা বনি ইসরাইল</item>
+        <item>সূরা আল-কাহফ</item>
+        <item>সূরা মারইয়াম</item>
+        <item> সূরা আত-ত্বহা</item>
+        <item>সূরা আল-আম্বিয়া</item>
+        <item>সূরা আল-হাজ্জ্ব</item>
+        <item>সূরা আল মু’মিনূন</item>
+        <item> সূরা আন-নূর</item>
+        <item>সূরা আল-ফুরকান</item>
+        <item>সূরা আশ-শুরা</item>
+        <item>  সূরা আন-নমল</item>
+        <item> সূরা আল কাসাস</item>
+        <item>সূরা আল-আনকাবুত</item>
+        <item>সূরা আর-রূম</item>
+        <item> সূরা লোকমান</item>
+        <item>সূরা [হা মীম] আস-সিজদাহ</item>
+        <item>সূরা আল-আহজাব</item>
+        <item>সূরা আস-সাবা</item>
+        <item>সূরা আল-ফাতির</item>
+        <item> সূরা ইয়াসীন</item>
+        <item>আস-সাফফাত</item>
+        <item>সূরা আস-ছোয়াদ</item>
+        <item>সূরা আল-যুমার</item>
+        <item>সূরা আল-মু’মিন</item>
+        <item> সূরা আস-সাজদা</item>
+        <item>সূরা আশ-শো’আরা</item>
+        <item> সূরা আজ-জুখরুফ</item>
+        <item> সূরা আদ-দুখান</item>
+        <item> আল-জাসিয়াহ</item>
+        <item>আল-আহক্বাফ</item>
+        <item>সূরা মুহাম্মদ</item>
+        <item>আল-ফাতাহ</item>
+        <item>সূরা আল-হুজরাত</item>
+        <item>সূরা ক্বাফ</item>
+        <item>সূরা আয-যারিয়াত</item>
+        <item>সূরা আত্ব তূর </item>
+        <item>সূরা আন-নাজম </item>
+        <item> সূরা আল ক্বামার</item>
+        <item>সূরা আর রহমান</item>
+        <item>সূরা আল ওয়াক্বিয়া</item>
+        <item>সূরা আল হাদীদ </item>
+        <item> সূরা আল মুজাদালাহ</item>
+        <item>সূরা আল হাশর</item>
+        <item>সূরা আল মুমতাহিনা</item>
+        <item>সূরা আছ-ছফ</item>
+        <item>সূরা আল জুমুআহ</item>
+        <item>সূরা মুনাফিকুন</item>
+        <item>সূরা আত-তাগাবুন</item>
+        <item> সূরা আত্ব-ত্বালাক্ব</item>
+        <item>সূরা আত-তাহরীম</item>
+        <item> সূরা আল মুলক</item>
+        <item>সূরা আল-ক্বলম</item>
+        <item>সূরা আল হাক্বক্বাহ</item>
+        <item>সূরা আল মা’আরিজ</item>
+        <item>সূরা নূহ</item>
+        <item>সূরা আল জিন</item>
+        <item>সূরা আল-মুজজাম্মিল</item>
+        <item>সূরা আল মুদ্দাস্‌সির</item>
+        <item>সূরা আল ক্বেয়ামাহ</item>
+        <item>সূরা আদ-দাহর</item>
+        <item>সূরা আল মুরসালাত </item>
+        <item>সূরা আন-নাবা</item>
+        <item>সূরা আন-নাজিয়াত</item>
+        <item> সূরা আবাসা</item>
+        <item> সূরা আত-তাকওয়ির</item>
+        <item>সূরা আল-ইনফিতার</item>
+        <item>সূরা আল-মুতাফফিফিন</item>
+        <item>সূরা আল-ইনশিকাক</item>
+        <item>সূরা আল-বুরুজ</item>
+        <item>সূরা আত-তারিক</item>
+        <item>সূরা আল-আলা</item>
+        <item>সূরা আল-গাশিয়াহ</item>
+        <item>সূরা আল-ফাজর</item>
+        <item> সূরা আল-বালাদ</item>
+        <item> সূরা আশ- শামস</item>
+        <item>সূরা আল লায়ল</item>
+        <item>সূরা আদ্ব-দ্বোহা</item>
+        <item> সূরা আল ইনশিরাহ</item>
+        <item> সূরা আল ত্বীন</item>
+        <item>সূরা আলাক</item>
+        <item>সূরা কদর</item>
+        <item>সূরা বাইয়্যিনাহ</item>
+        <item>সূরা যিলযাল</item>
+        <item> সূরা আদিয়াত</item>
+        <item>  সূরা কারেয়া</item>
+        <item>সূরা তাকাসূর</item>
+        <item>সূরা আছর</item>
+        <item>সূরা হুমাযাহ</item>
+        <item> সূরা ফীল</item>
+        <item>সূরা কোরাইশ</item>
+        <item>সূরা মাউন</item>
+        <item>সূরা কাওসার</item>
+        <item>সূরা কাফিরুন</item>
+        <item>সূরা নছর</item>
+        <item>সূরা লাহাব</item>
+        <item>সূরা এখলাছ</item>
+        <item>সূরা ফালাক</item>
+        <item>সূরা নাস</item>
+
+
+    </string-array>
+    <string name="sura_takasur">
+        সূরা তাকাসূর
+
+
+بِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ
+
+বিসমিল্লাহির রাহমানির রাহিম
+
+ শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু
+
+
+
+
+
+
+[1]  أَلهىٰكُمُ التَّكاثُرُ
+
+[1] আল্হা-কুমু ত্তাকা-ছুরু
+
+[1] প্রাচুর্যের লালসা তোমাদেরকে গাফেল রাখে,
+
+[1] The mutual rivalry (for piling up of worldly things) diverts you,
+
+
+
+[2]  حَتّىٰ زُرتُمُ المَقابِرَ
+
+[2] হাত্তা-র্যুতুমুল্ মাক্বা-র্বি।
+
+[2] এমনকি, তোমরা কবরস্থানে পৌছে যাও।
+
+[2] Until you visit the graves (i.e. till you die).
+
+
+
+[3]  كَلّا سَوفَ تَعلَمونَ
+
+[3]  কাল্লা-সাওফা তা’লামূনা
+
+[3] এটা কখনও উচিত নয়। তোমরা সত্ত্বরই জেনে নেবে।
+
+[3] Nay! You shall come to know!
+
+
+
+[4]  ثُمَّ كَلّا سَوفَ تَعلَمونَ
+
+[4] ছুম্মা কাল্লা-সাওফা তা’লামূন্।
+
+[4] অতঃপর এটা কখনও উচিত নয়। তোমরা সত্ত্বরই জেনে নেবে।
+
+[4] Again, Nay! You shall come to know!
+
+
+
+[5]  كَلّا لَو تَعلَمونَ عِلمَ اليَقينِ
+
+[5] কাল্লা-লাও তা’লামূনা ই’ল্মাল্ ইয়াক্বীন্।
+
+[5] কখনই নয়; যদি তোমরা নিশ্চিত জানতে।
+
+[5] Nay! If you knew with a sure knowledge (the end result of piling up, you would not have been occupied yourselves in worldly things)
+
+
+
+[6]  لَتَرَوُنَّ الجَحيمَ
+
+[6] লাতারায়ুন্নাল্ জ্বাহীমা
+
+[6] তোমরা অবশ্যই জাহান্নাম দেখবে,
+
+[6] Verily, You shall see the blazing Fire (Hell)!
+
+
+
+[7]  ثُمَّ لَتَرَوُنَّها عَينَ اليَقينِ
+
+[7] ছুম্মা লাতারায়ুন্নাহা-‘আইনাল্ ইয়াক্বীন।
+
+[7] অতঃপর তোমরা তা অবশ্যই দেখবে দিব্য প্রত্যয়ে,
+
+[7] And again, you shall see it with certainty of sight!
+
+
+
+[8]  ثُمَّ لَتُسـَٔلُنَّ يَومَئِذٍ عَنِ النَّعيمِ
+
+[8] ছুম্মা লাতুস্য়ালুন্না ইয়াওমায়িযিন্ ‘আনিন্নাঈ’ম্।
+
+[8] এরপর অবশ্যই সেদিন তোমরা নেয়ামত সম্পর্কে জিজ্ঞাসিত হবে।
+
+[8] Then, on that Day, you shall be asked about the delights (you indulged in, in this world)!
+    </string>
+    <string name="sura_falak">
+        সূরা ফালাক
+
+
+بِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ
+
+বিসমিল্লাহির রাহমানির রাহিম
+
+ শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু
+
+
+
+
+
+
+[1]  قُل أَعوذُ بِرَبِّ الفَلَقِ
+
+[1] কুল্ আ‘ঊযু বিরব্বিল্ ফালাক্বি।
+
+[1] বলুন, আমি আশ্রয় গ্রহণ করছি প্রভাতের পালনকর্তার,
+
+[1] Say: "I seek refuge with (Allâh) the Lord of the daybreak,
+
+
+
+[2]  مِن شَرِّ ما خَلَقَ
+
+[2] মিন্ শাররি মা-খলাক্ব।
+
+[2] তিনি যা সৃষ্টি করেছেন, তার অনিষ্ট থেকে,
+
+[2] "From the evil of what He has created;
+
+
+
+[3]  وَمِن شَرِّ غاسِقٍ إِذا وَقَبَ
+
+[3]  অমিন্ শাররি গ-সিক্বিন্ ইযা-অক্বাব্।
+
+[3] অন্ধকার রাত্রির অনিষ্ট থেকে, যখন তা সমাগত হয়,
+
+[3] "And from the evil of the darkening (night) as it comes with its darkness; (or the moon as it sets or goes away)
+
+
+
+[4]  وَمِن شَرِّ النَّفّٰثٰتِ فِى العُقَدِ
+
+[4] অমিন্ শাররি ন্নাফ্ফা-ছা-তি ফিল্ ‘উক্বদ্।
+
+[4] গ্রন্থিতে ফুঁৎকার দিয়ে জাদুকারিনীদের অনিষ্ট থেকে
+
+[4] "And from the evil of those who practise witchcrafts when they blow in the knots,
+
+
+
+[5]  وَمِن شَرِّ حاسِدٍ إِذا حَسَدَ
+
+[5] অমিন্ শাররি হা-সিদিন্ ইযা-হাসাদ্।
+
+[5] এবং হিংসুকের অনিষ্ট থেকে যখন সে হিংসা করে।
+
+[5] "And from the evil of the envier when he envies."
+    </string>
+<string name="sura_ikhlas">
+    সূরা এখলাছ
+
+
+بِبِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ
+
+বিসমিল্লাহির রাহমানির রাহিম
+
+ শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু
+
+
+
+
+
+[1]  قُل هُوَ اللَّهُ أَحَدٌ
+
+[1] কুল্ হুওয়াল্লা-হু আহাদ্।
+
+[1] বলুন, তিনি আল্লাহ, এক,
+
+[1] Say (O Muhammad (SAW)): "He is Allâh, (the) One.
+
+
+
+[2]  اللَّهُ الصَّمَدُ
+
+[2] আল্লা-হুচ্ছমাদ্।
+
+[2] আল্লাহ অমুখাপেক্ষী,
+
+[2] "Allâh-us-Samad (السيد الذي يصمد إليه في الحاجات) [Allâh the Self-Sufficient Master, Whom all creatures need, (He neither eats nor drinks)].
+
+
+
+[3]  لَم يَلِد وَلَم يولَد
+
+[3] লাম্ ইয়ালিদ্ অলাম্ ইয়ূলাদ্।
+
+[3] তিনি কাউকে জন্ম দেননি এবং কেউ তাকে জন্ম দেয়নি
+
+[3] "He begets not, nor was He begotten;
+
+
+
+[4]  وَلَم يَكُن لَهُ كُفُوًا أَحَدٌ
+
+[4] অলাম্ ইয়া কুল্লাহূ কুফুওয়ান্ আহাদ্।
+
+[4] এবং তার সমতুল্য কেউ নেই।
+
+[4] "And there is none co-equal or comparable unto Him."
+</string>
+<string name="sura_lahab">
+    সূরা লাহাব
+
+
+بِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ
+
+বিসমিল্লাহির রাহমানির রাহিম
+
+ শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু
+
+
+
+
+
+
+[1]  تَبَّت يَدا أَبى لَهَبٍ وَتَبَّ
+
+[1] তাব্বাত্ ইয়াদা য় আবী লাহাবিঁও অতাব্।
+
+[1] আবু লাহাবের হস্তদ্বয় ধ্বংস হোক এবং ধ্বংস হোক সে নিজে,
+
+[1] Perish the two hands of Abû Lahab (an uncle of the Prophet), and perish he!
+
+
+
+[2]   ما أَغنىٰ عَنهُ مالُهُ وَما كَسَبَ
+
+[2] মা য় আগ্না-‘আন্হু মা-লুহূ অমা-কাসাব্
+
+[2] কোন কাজে আসেনি তার ধন-সম্পদ ও যা সে উপার্জন করেছে।
+
+[2] His wealth and his children will not benefit him!
+
+
+
+[3]  سَيَصلىٰ نارًا ذاتَ لَهَبٍ
+
+[3] সাইয়াছ্লা- না-রন্ যা-তা লাহাবিঁও।
+
+[3] সত্বরই সে প্রবেশ করবে লেলিহান অগ্নিতে
+
+[3] He will be burnt in a Fire of blazing flames!
+
+
+
+[4]  وَامرَأَتُهُ حَمّالَةَ الحَطَبِ
+
+[4] অম্রয়াতুহ্; হাম্মা-লাতাল্ হাত্বোয়াব্।
+
+[4] এবং তার স্ত্রীও-যে ইন্ধন বহন করে,
+
+[4] And his wife too, who carries wood (thorns of Sadan which she used to put on the way of the Prophet (SAW) , or use to slander him).
+
+
+
+[5]  فى جيدِها حَبلٌ مِن مَسَدٍ
+
+[5] ফী জ্বীদিহা-হাব্লুম্ মিম্ মাসাদ্।
+
+[5] তার গলদেশে খর্জুরের রশি নিয়ে।
+
+[5] In her neck is a twisted rope of Masad (palm fibre).
+
+
+</string>
+    <string name="sura_nasor">
+        সূরা নছর
+
+
+بِبِسمِ اللَّهِ الرَّحمٰنِ الرَّحيمِ
+
+বিসমিল্লাহির রাহমানির রাহিম
+
+ শুরু করছি আল্লাহর নামে যিনি পরম করুণাময়, অতি দয়ালু
+
+
+
+
+[1]  إِذا جاءَ نَصرُ اللَّهِ وَالفَتحُ
+
+[1] ইযা-জ্বা-য়া নাছ্রুল্লা-হি অল্ফাত্হু
+
+[1] যখন আসবে আল্লাহর সাহায্য ও বিজয়
+
+[1] When there comes the Help of Allah (to you, O Muhammad (SAW) against your enemies) and the conquest (of Markka),
+
+
+
+[2] وَرَأَيتَ النّاسَ يَدخُلونَ فى دينِ اللَّهِ أَفواجًا
+
+[2]  অরয়াইতান্না-সা ইয়াদ্খুলূনা ফী দীনিল্ লা-হি আফ্ওয়া-জ্বা-।
+
+[2] এবং আপনি মানুষকে দলে  দলে আল্লাহর দ্বীনে প্রবেশ করতে দেখবেন,
+
+[2] And you see that the people enter Allah religion (Islam) in crowds,
+
+
+
+[3]  فَسَبِّح بِحَمدِ رَبِّكَ وَاستَغفِرهُ ۚ إِنَّهُ كانَ تَوّابًا
+
+[3] ফাসাব্বিহ্ বিহাম্দি রব্বিকা অস্তার্গ্ফিহু; ইন্নাহূ কা-না তাওয়্যা-বা-।
+
+[3] তখন আপনি আপনার পালনকর্তার পবিত্রতা বর্ণনা করুন এবং তাঁর কাছে ক্ষমা প্রার্থনা করুন। নিশ্চয় তিনি ক্ষমাকারী।
+
+[3] So glorify the Praises of your Lord, and ask His Forgiveness. Verily, He is the One Who accepts the repentance and Who forgives
+
+</string>
+
+<string-array name="sura_Serial">
+
+
+    <item>১</item>
+    <item>২</item>
+    <item>৩</item>
+    <item>৪</item>
+    <item>৫</item>
+    <item>৬</item>
+    <item>৭</item>
+    <item>৮</item>
+    <item>৯</item>
+    <item>১০</item>
+    <item>১১</item>
+    <item>১২</item>
+    <item>১৩</item>
+    <item>১৪</item>
+    <item>১৫</item>
+    <item>১৬</item>
+    <item>১৭</item>
+    <item>১৮</item>
+    <item>১৯</item>
+    <item>২০</item>
+    <item>২১</item>
+    <item>২২</item>
+    <item>২৩</item>
+    <item>২৪</item>
+    <item>২৫</item>
+    <item>২৬</item>
+    <item>২৭</item>
+    <item>২৮</item>
+    <item>২৯</item>
+    <item>৩০</item>
+    <item>৩১</item>
+    <item>৩২</item>
+    <item>৩৩</item>
+    <item>৩৪</item>
+    <item>৩৫</item>
+    <item>৩৬</item>
+    <item>৩৭</item>
+    <item>৩৮</item>
+    <item>৩৯</item>
+    <item>৪০</item>
+    <item>৪১</item>
+    <item>৪২</item>
+    <item>৪৩</item>
+    <item>৪৪</item>
+    <item>৪৫</item>
+    <item>৪৬</item>
+    <item>৪৭</item>
+    <item>৪৮</item>
+    <item>৪৯</item>
+    <item>৫০</item>
+    <item>৫১</item>
+    <item>৫২</item>
+    <item>৫৩</item>
+    <item>৫৪</item>
+    <item>৫৫</item>
+    <item>৫৬</item>
+    <item>৫৭</item>
+    <item>৫৮</item>
+    <item>৫৯</item>
+    <item>৬০</item>
+    <item>৬১</item>
+    <item>৬২</item>
+    <item>৬৩</item>
+    <item>৬৪</item>
+    <item>৬৫</item>
+    <item>৬৬</item>
+    <item>৬৭</item>
+    <item>৬৮</item>
+    <item>৬৯</item>
+    <item>৭০</item>
+    <item>৭১</item>
+    <item>৭২</item>
+    <item>৭৩</item>
+    <item>৭৪</item>
+    <item>৭৫</item>
+    <item>৭৬</item>
+    <item>৭৭</item>
+    <item>৭৮</item>
+    <item>৭৯</item>
+    <item>৮০</item>
+    <item>৮১</item>
+    <item>৮২</item>
+    <item>৮৩</item>
+    <item>৮৪</item>
+    <item>৮৫</item>
+    <item>৮৬</item>
+    <item>৮৭</item>
+    <item>৮৮</item>
+    <item>৮৯</item>
+    <item>৯০</item>
+    <item>৯১</item>
+    <item>৯২</item>
+    <item>৯৩</item>
+    <item>৯৪</item>
+    <item>৯৫</item>
+    <item>৯৬</item>
+    <item>৯৭</item>
+    <item>৯৮</item>
+    <item>৯৯</item>
+    <item>১০০</item>
+    <item>১০১</item>
+    <item>১০২</item>
+    <item>১০৩</item>
+    <item>১০৪</item>
+    <item>১০৫</item>
+    <item>১০৬</item>
+    <item>১০৭</item>
+    <item>১০৮</item>
+    <item>১০৯</item>
+    <item>১১০</item>
+    <item>১১১</item>
+    <item>১১২</item>
+    <item>১১৩</item>
+    <item>১১৪</item>
+</string-array>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <string-array name="blessings1">
@@ -338,6 +913,20 @@
 
     </string-array>
 
+    <string-array name="subjectfragmentvalues">
+
+        <item>নিত্যদিন</item>
+        <item>যিকির-ঘুম</item>
+        <item>সামাজিক</item>
+        <item>হজ্ব-সিয়াম</item>
+        <item>কুরআন</item>
+        <item>সালাত</item>
+        <item>অনুভূতি</item>
+        <item>ইমান-সুরক্ষা</item>
+        <item>অসুস্থতা</item>
+
+
+    </string-array>
 
     <string-array name="blessings_serial2">
 

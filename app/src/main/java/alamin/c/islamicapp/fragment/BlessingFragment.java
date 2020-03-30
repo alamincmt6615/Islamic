@@ -8,9 +8,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -37,7 +40,7 @@ public class BlessingFragment extends Fragment {
     private BlessingsAdapters adapters2;
 
 
-    private  String[] value2;
+     private String[] value2;
    private String[] serial2;
 
 
@@ -52,8 +55,7 @@ public class BlessingFragment extends Fragment {
             serial2=getResources().getStringArray(R.array.blessings_serial2);
 
 
-
-        recyclerView=view.findViewById(R.id.blesingFragmentRecyclerViewid);
+       recyclerView=view.findViewById(R.id.blesingFragmentRecyclerViewid);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -74,11 +76,8 @@ public class BlessingFragment extends Fragment {
 
 
 
-
-
         return view;
     }
-
 
 
     public void changActivity(int position){
