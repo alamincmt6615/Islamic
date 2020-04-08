@@ -6,14 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SuraShowerActivity">
-
-
-    <WebView
-
-        android:id="@+id/suraShowerwebviewid"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/suraDetailsTextviewid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:id="@+id/suraRecyclerViewid"
         />
 
 </LinearLayout>

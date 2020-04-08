@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/list_background"
+
+        android:textColor="#fff"
+        android:text="1"
+        android:textSize="22sp"
+        android:id="@+id/sura_SerialTextviewid"
+        android:layout_marginRight="20sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/firstliniarLayout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sura_SerialTextviewid"
+        >
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="firsttext"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:id="@+id/sura_NameTextviewid"
+
+        />
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="firsttext"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:id="@+id/suraNameMeanignTextviewid"
+
+        />
+
+    </LinearLayout>
+    <TextView
+        android:gravity="right"
+        android:layout_toRightOf="@id/firstliniarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="firsttext"
+        android:textSize="22sp"
+        android:textColor="#000"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/arabic_SuraNameTextviewid"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

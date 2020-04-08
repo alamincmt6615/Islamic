@@ -28,8 +28,7 @@ import static android.content.Context.MODE_PRIVATE;
 public class SubjectFragment extends Fragment {
 
     public SubjectFragment() {
-        // Required empty public constructor
-    }
+ }
 
 
     private GridView gridView;
@@ -102,6 +101,7 @@ public class SubjectFragment extends Fragment {
                     Intent intent=new Intent(getContext(), SubjectListActivity.class);
                     intent.putExtra("value",values[position]);
                     startActivity(intent);
+
                 }
             }
         });
@@ -110,8 +110,4 @@ public class SubjectFragment extends Fragment {
 
         return view;
     }
-
-
-
-
 }
