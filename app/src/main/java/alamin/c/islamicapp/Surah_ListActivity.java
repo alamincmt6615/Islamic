@@ -3,28 +3,25 @@ package alamin.c.islamicapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
-import android.database.Cursor;
+
 import android.os.Bundle;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.google.android.material.tabs.TabLayout;
 
-import alamin.c.islamicapp.Adapters.BlessingsAdapters;
-import alamin.c.islamicapp.Adapters.DataAccess;
-import alamin.c.islamicapp.Adapters.QuranAdapters;
-import alamin.c.islamicapp.Adapters.SuraListRecyclerAdapter;
-import alamin.c.islamicapp.DataHandeler.SuraNameHandeler;
 
 public class Surah_ListActivity extends AppCompatActivity {
 
-    String name, id, serial, url,translate,arabic;
+   /* */
 
-    private RecyclerView recyclerView;
 
-    private List<SuraNameHandeler> suraHandelarList = new ArrayList<>();
-    private QuranAdapters adapters;
+
+    private ViewPager mviewPager;
+  private QuranPagerAdapter quranPagerAdapter;
+    private TabLayout mTablayot;
+
+
 
 
     @Override
@@ -33,7 +30,18 @@ public class Surah_ListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_surah__list);
 
 
-        recyclerView = findViewById(R.id.suraListRecyclerViewid);
+
+        mTablayot=findViewById(R.id.suraList_tabsid);
+        mviewPager=findViewById(R.id.suraListTabpagerid);
+
+        quranPagerAdapter=new QuranPagerAdapter(getSupportFragmentManager());
+        mviewPager.setAdapter(quranPagerAdapter);
+        mTablayot.setupWithViewPager(mviewPager);
+
+
+
+
+/*        recyclerView = findViewById(R.id.suraListRecyclerViewid);
 
 
         recyclerView.setHasFixedSize(true);
@@ -51,12 +59,12 @@ public class Surah_ListActivity extends AppCompatActivity {
                 intent.putExtra("url",position+1);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
     }
 
-    @Override
+/*    @Override
     protected void onStart() {
         super.onStart();
 
@@ -77,5 +85,5 @@ public class Surah_ListActivity extends AppCompatActivity {
 
             }
         }
-    }
+    }*/
 }

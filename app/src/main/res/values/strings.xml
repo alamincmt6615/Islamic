@@ -278,7 +278,7 @@
 
 [5] "And from the evil of the envier when he envies."
     </string>
-<string name="sura_ikhlas">
+    <string name="sura_ikhlas">
     সূরা এখলাছ
 
 
@@ -330,7 +330,7 @@
 
 [4] "And there is none co-equal or comparable unto Him."
 </string>
-<string name="sura_lahab">
+    <string name="sura_lahab">
     সূরা লাহাব
 
 
@@ -438,147 +438,124 @@
 
 </string>
 
-<string-array name="sura_Serial">
+    <string-array name="sura_Serial">
 
 
-    <item>১</item>
-    <item>২</item>
-    <item>৩</item>
-    <item>৪</item>
-    <item>৫</item>
-    <item>৬</item>
-    <item>৭</item>
-    <item>৮</item>
-    <item>৯</item>
-    <item>১০</item>
-    <item>১১</item>
-    <item>১২</item>
-    <item>১৩</item>
-    <item>১৪</item>
-    <item>১৫</item>
-    <item>১৬</item>
-    <item>১৭</item>
-    <item>১৮</item>
-    <item>১৯</item>
-    <item>২০</item>
-    <item>২১</item>
-    <item>২২</item>
-    <item>২৩</item>
-    <item>২৪</item>
-    <item>২৫</item>
-    <item>২৬</item>
-    <item>২৭</item>
-    <item>২৮</item>
-    <item>২৯</item>
-    <item>৩০</item>
-    <item>৩১</item>
-    <item>৩২</item>
-    <item>৩৩</item>
-    <item>৩৪</item>
-    <item>৩৫</item>
-    <item>৩৬</item>
-    <item>৩৭</item>
-    <item>৩৮</item>
-    <item>৩৯</item>
-    <item>৪০</item>
-    <item>৪১</item>
-    <item>৪২</item>
-    <item>৪৩</item>
-    <item>৪৪</item>
-    <item>৪৫</item>
-    <item>৪৬</item>
-    <item>৪৭</item>
-    <item>৪৮</item>
-    <item>৪৯</item>
-    <item>৫০</item>
-    <item>৫১</item>
-    <item>৫২</item>
-    <item>৫৩</item>
-    <item>৫৪</item>
-    <item>৫৫</item>
-    <item>৫৬</item>
-    <item>৫৭</item>
-    <item>৫৮</item>
-    <item>৫৯</item>
-    <item>৬০</item>
-    <item>৬১</item>
-    <item>৬২</item>
-    <item>৬৩</item>
-    <item>৬৪</item>
-    <item>৬৫</item>
-    <item>৬৬</item>
-    <item>৬৭</item>
-    <item>৬৮</item>
-    <item>৬৯</item>
-    <item>৭০</item>
-    <item>৭১</item>
-    <item>৭২</item>
-    <item>৭৩</item>
-    <item>৭৪</item>
-    <item>৭৫</item>
-    <item>৭৬</item>
-    <item>৭৭</item>
-    <item>৭৮</item>
-    <item>৭৯</item>
-    <item>৮০</item>
-    <item>৮১</item>
-    <item>৮২</item>
-    <item>৮৩</item>
-    <item>৮৪</item>
-    <item>৮৫</item>
-    <item>৮৬</item>
-    <item>৮৭</item>
-    <item>৮৮</item>
-    <item>৮৯</item>
-    <item>৯০</item>
-    <item>৯১</item>
-    <item>৯২</item>
-    <item>৯৩</item>
-    <item>৯৪</item>
-    <item>৯৫</item>
-    <item>৯৬</item>
-    <item>৯৭</item>
-    <item>৯৮</item>
-    <item>৯৯</item>
-    <item>১০০</item>
-    <item>১০১</item>
-    <item>১০২</item>
-    <item>১০৩</item>
-    <item>১০৪</item>
-    <item>১০৫</item>
-    <item>১০৬</item>
-    <item>১০৭</item>
-    <item>১০৮</item>
-    <item>১০৯</item>
-    <item>১১০</item>
-    <item>১১১</item>
-    <item>১১২</item>
-    <item>১১৩</item>
-    <item>১১৪</item>
-</string-array>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <item>১</item>
+        <item>২</item>
+        <item>৩</item>
+        <item>৪</item>
+        <item>৫</item>
+        <item>৬</item>
+        <item>৭</item>
+        <item>৮</item>
+        <item>৯</item>
+        <item>১০</item>
+        <item>১১</item>
+        <item>১২</item>
+        <item>১৩</item>
+        <item>১৪</item>
+        <item>১৫</item>
+        <item>১৬</item>
+        <item>১৭</item>
+        <item>১৮</item>
+        <item>১৯</item>
+        <item>২০</item>
+        <item>২১</item>
+        <item>২২</item>
+        <item>২৩</item>
+        <item>২৪</item>
+        <item>২৫</item>
+        <item>২৬</item>
+        <item>২৭</item>
+        <item>২৮</item>
+        <item>২৯</item>
+        <item>৩০</item>
+        <item>৩১</item>
+        <item>৩২</item>
+        <item>৩৩</item>
+        <item>৩৪</item>
+        <item>৩৫</item>
+        <item>৩৬</item>
+        <item>৩৭</item>
+        <item>৩৮</item>
+        <item>৩৯</item>
+        <item>৪০</item>
+        <item>৪১</item>
+        <item>৪২</item>
+        <item>৪৩</item>
+        <item>৪৪</item>
+        <item>৪৫</item>
+        <item>৪৬</item>
+        <item>৪৭</item>
+        <item>৪৮</item>
+        <item>৪৯</item>
+        <item>৫০</item>
+        <item>৫১</item>
+        <item>৫২</item>
+        <item>৫৩</item>
+        <item>৫৪</item>
+        <item>৫৫</item>
+        <item>৫৬</item>
+        <item>৫৭</item>
+        <item>৫৮</item>
+        <item>৫৯</item>
+        <item>৬০</item>
+        <item>৬১</item>
+        <item>৬২</item>
+        <item>৬৩</item>
+        <item>৬৪</item>
+        <item>৬৫</item>
+        <item>৬৬</item>
+        <item>৬৭</item>
+        <item>৬৮</item>
+        <item>৬৯</item>
+        <item>৭০</item>
+        <item>৭১</item>
+        <item>৭২</item>
+        <item>৭৩</item>
+        <item>৭৪</item>
+        <item>৭৫</item>
+        <item>৭৬</item>
+        <item>৭৭</item>
+        <item>৭৮</item>
+        <item>৭৯</item>
+        <item>৮০</item>
+        <item>৮১</item>
+        <item>৮২</item>
+        <item>৮৩</item>
+        <item>৮৪</item>
+        <item>৮৫</item>
+        <item>৮৬</item>
+        <item>৮৭</item>
+        <item>৮৮</item>
+        <item>৮৯</item>
+        <item>৯০</item>
+        <item>৯১</item>
+        <item>৯২</item>
+        <item>৯৩</item>
+        <item>৯৪</item>
+        <item>৯৫</item>
+        <item>৯৬</item>
+        <item>৯৭</item>
+        <item>৯৮</item>
+        <item>৯৯</item>
+        <item>১০০</item>
+        <item>১০১</item>
+        <item>১০২</item>
+        <item>১০৩</item>
+        <item>১০৪</item>
+        <item>১০৫</item>
+        <item>১০৬</item>
+        <item>১০৭</item>
+        <item>১০৮</item>
+        <item>১০৯</item>
+        <item>১১০</item>
+        <item>১১১</item>
+        <item>১১২</item>
+        <item>১১৩</item>
+        <item>১১৪</item>
+    </string-array>
 
 
     <string-array name="blessings1">
