@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import alamin.c.islamicapp.DataHandeler.ParaListHandeler;
 import alamin.c.islamicapp.DataHandeler.SuraNameHandeler;
 import alamin.c.islamicapp.R;
 
@@ -19,9 +20,9 @@ public class ParaAdapters extends RecyclerView.Adapter<ParaAdapters.MyViewHolder
 
     private OnItemClickListner listner;
     private Context context;
-private List<SuraNameHandeler> suraHandelarList;
+private List<ParaListHandeler> suraHandelarList;
 
-    public ParaAdapters(Context context, List<SuraNameHandeler> suraHandelarList) {
+    public ParaAdapters(Context context, List<ParaListHandeler> suraHandelarList) {
         this.context = context;
         this.suraHandelarList = suraHandelarList;
     }
@@ -31,7 +32,7 @@ private List<SuraNameHandeler> suraHandelarList;
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 
-        View view= LayoutInflater.from(context).inflate(R.layout.sura_name_sample_layoute,parent,false);
+        View view= LayoutInflater.from(context).inflate(R.layout.parasample_layoute,parent,false);
 
 
 
@@ -40,12 +41,11 @@ private List<SuraNameHandeler> suraHandelarList;
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        SuraNameHandeler suraHandelar=suraHandelarList.get(position);
+        ParaListHandeler paraListHandeler=suraHandelarList.get(position);
 
-        holder.valuesTextview.setText(suraHandelar.getName());
-        holder.serialTextview.setText(suraHandelar.getSerial());
-        holder.translateTextview.setText(suraHandelar.getTranslate());
-        holder.arabicTextveiwid.setText(suraHandelar.getArabic());
+        holder.serialTextview.setText(paraListHandeler.getParaserial());
+        holder.translateTextview.setText(paraListHandeler.getParaname());
+        holder.arabicTextveiwid.setText(paraListHandeler.getParaArabic());
 
 
 
@@ -59,7 +59,6 @@ private List<SuraNameHandeler> suraHandelarList;
 
     public class MyViewHolder  extends  RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private TextView valuesTextview;
         private  TextView serialTextview;
         private  TextView translateTextview;
         private  TextView  arabicTextveiwid;
@@ -69,10 +68,9 @@ private List<SuraNameHandeler> suraHandelarList;
 
 
 
-            valuesTextview=itemView.findViewById(R.id.sura_NameTextviewid);
-            serialTextview=itemView.findViewById(R.id.sura_SerialTextviewid);
-            translateTextview=itemView.findViewById(R.id.suraNameMeanignTextviewid);
-            arabicTextveiwid=itemView.findViewById(R.id.arabic_SuraNameTextviewid);
+            serialTextview=itemView.findViewById(R.id.para_SerialTextviewid);
+            translateTextview=itemView.findViewById(R.id.para_sura_NameTextviewid);
+            arabicTextveiwid=itemView.findViewById(R.id.arabic_ParaNameTextviewid);
 
 
 

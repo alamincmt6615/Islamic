@@ -51,6 +51,19 @@ public class DataAccess {
         Cursor cursor=sqLiteDatabase.rawQuery(GETVALUE,null);
         return cursor;
 
+    }  public Cursor getSurawithPara(int id,int para){
+        String GETVALUE="SELECT * FROM quran_verses where  sura_id = '"+id+"'  AND  para_hafizi ='"+para+"'";
+        SQLiteDatabase sqLiteDatabase= openHelper.getWritableDatabase();
+        Cursor cursor=sqLiteDatabase.rawQuery(GETVALUE,null);
+        return cursor;
+
+    }
+    public Cursor getPara(){
+        String GETVALUE="SELECT * FROM qp_para";
+        SQLiteDatabase sqLiteDatabase= openHelper.getWritableDatabase();
+        Cursor cursor=sqLiteDatabase.rawQuery(GETVALUE,null);
+        return cursor;
+
     }
 
 

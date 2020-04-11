@@ -5,11 +5,13 @@ public class SuraValues {
     String arabic;
     String banglaTranslate;
     String bangla;
+    String ayahserial;
 
-    public SuraValues(String arabic, String banglaTranslate, String bangla) {
+    public SuraValues(String arabic, String banglaTranslate, String bangla,String ayahserial) {
         this.arabic = arabic;
         this.banglaTranslate = banglaTranslate;
         this.bangla = bangla;
+        this.ayahserial=ayahserial;
     }
 
     public String getArabic() {
@@ -34,5 +36,13 @@ public class SuraValues {
 
     public void setBanglaTranslate(String banglaTranslate) {
         this.banglaTranslate = banglaTranslate;
+    }
+
+    public String getAyahserial() {
+        return ayahserial;
+    }
+
+    public void setAyahserial(String ayahserial) {
+        this.ayahserial = ayahserial;
     }
 }

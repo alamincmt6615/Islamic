@@ -9,21 +9,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.List;
+import java.util.ArrayList;
 
-import alamin.c.islamicapp.DataHandeler.SuraValues;
 import alamin.c.islamicapp.R;
 
-public class SuraAdapter extends RecyclerView.Adapter<SuraAdapter.MyViewHolder> {
+public class ParaWiseSuraListAdapater extends RecyclerView.Adapter<ParaWiseSuraListAdapater.MyViewHolder> {
 
 
     private OnItemClickListner listner;
     private Context context;
-private List<SuraValues> suraValues;
+    private  String[] values;
 
-    public SuraAdapter(Context context, List<SuraValues> suraValues) {
+    public ParaWiseSuraListAdapater(Context context, String[] values) {
         this.context = context;
-        this.suraValues = suraValues;
+        this.values = values;
     }
 
     @NonNull
@@ -31,7 +30,7 @@ private List<SuraValues> suraValues;
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 
-        View view= LayoutInflater.from(context).inflate(R.layout.sura_shower_sample_layoute,parent,false);
+        View view= LayoutInflater.from(context).inflate(R.layout.blessing_fragments_parent_sample_layout,parent,false);
 
 
 
@@ -40,35 +39,37 @@ private List<SuraValues> suraValues;
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        SuraValues suraValues1=suraValues.get(position);
 
-        holder.arabicTextview.setText("("+suraValues1.getAyahserial()+")"+suraValues1.getArabic());
-        holder.banglaTextview.setText("অর্থঃ   "+suraValues1.getBangla()+"\n");
-        holder.banglaTranslateTextview.setText("উচ্চারণঃ   "+suraValues1.getBanglaTranslate()+"\n");
 
+        holder.valuesTextview.setText(values[position]);
+        holder.serialTextview.setText(""+(position+1));
 
 
     }
 
     @Override
     public int getItemCount() {
-        return suraValues.size();
+        return values.length;
     }
+    public void filterList(ArrayList<String> filterdNames) {
+        for (int i=0; i<filterdNames.size(); i++){
+            this.values = filterdNames.toArray(new String[i]);
+            notifyDataSetChanged();
+        }
 
+    }
 
     public class MyViewHolder  extends  RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private TextView arabicTextview;
-        private  TextView banglaTextview;
-        private  TextView banglaTranslateTextview;
+        private TextView valuesTextview;
+        private  TextView serialTextview;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
 
-            arabicTextview=itemView.findViewById(R.id.arabicTextviewid);
-            banglaTextview=itemView.findViewById(R.id.banglaTextviewid);
-            banglaTranslateTextview=itemView.findViewById(R.id.banglaTranslateTextviewid);
+            valuesTextview=itemView.findViewById(R.id.blessingParentValueTextviewid);
+            serialTextview=itemView.findViewById(R.id.blessingParentSerialTextviewid);
 
 
 
@@ -80,7 +81,7 @@ private List<SuraValues> suraValues;
         public void onClick(View v) {
             if(listner!=null){
                 int position=getAdapterPosition();
-                if(position!= RecyclerView.NO_POSITION){
+                if(position!=RecyclerView.NO_POSITION){
                     listner.OnItemClick(position);
                 }
             }
