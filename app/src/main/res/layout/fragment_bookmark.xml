@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".quranFragments.BookmarkFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:id="@+id/savedSuraTextviewid"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"
+        android:text="পছন্দের সূরা সমূহঃ "
+        />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@+id/savedSuraTextviewid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/savedSuraRecyclerviewid"
+    />
+    <TextView
+        android:layout_below="@+id/savedSuraRecyclerviewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveayatTextviewid"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"
+        android:text="পছন্দের আয়াত সমূহঃ "
+        />
+    <androidx.recyclerview.widget.RecyclerView
 
-</FrameLayout>
+        android:layout_below="@+id/saveayatTextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedAyatRecyclerViewid"
+        />
+
+</RelativeLayout>

@@ -56,7 +56,8 @@ this.setTitle(suraName);
                 banglaTranslate=cursor.getString(8);
                 bangla=cursor.getString(9);
                 String ayatSerial=cursor.getString(3);
-                SuraValues suraValues=new SuraValues(arabic,banglaTranslate,bangla,ayatSerial);
+                String english=cursor.getString(12);
+                SuraValues suraValues=new SuraValues(arabic,banglaTranslate,bangla,ayatSerial,english);
                 suraValuesList.add(suraValues);
 
             }

@@ -1,20 +1,30 @@
 package alamin.c.islamicapp.DataHandeler;
 
-public class SuraNameHandeler {
+public class SavedSuraNameHandeler {
 
     String name;
     String serial;
     String  translate;
     String arabic;
+    String id;
 
-    public SuraNameHandeler(String name, String serial, String translate, String arabic) {
+    public SavedSuraNameHandeler(String name, String serial, String translate, String arabic,String id) {
         this.name = name;
         this.serial = serial;
         this.translate = translate;
         this.arabic = arabic;
+        this.id=id;
+
     }
 
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

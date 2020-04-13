@@ -1,7 +1,10 @@
 package alamin.c.islamicapp.Adapters;
 
 import android.content.Context;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -11,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import alamin.c.islamicapp.DataHandeler.SavedSuraNameHandeler;
 import alamin.c.islamicapp.DataHandeler.SuraNameHandeler;
 import alamin.c.islamicapp.R;
 
@@ -25,6 +29,7 @@ private List<SuraNameHandeler> suraHandelarList;
         this.context = context;
         this.suraHandelarList = suraHandelarList;
     }
+
 
     @NonNull
     @Override
@@ -57,7 +62,7 @@ private List<SuraNameHandeler> suraHandelarList;
     }
 
 
-    public class MyViewHolder  extends  RecyclerView.ViewHolder implements View.OnClickListener {
+    public class MyViewHolder  extends  RecyclerView.ViewHolder implements View.OnClickListener, View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener{
 
         private TextView valuesTextview;
         private  TextView serialTextview;
@@ -75,28 +80,53 @@ private List<SuraNameHandeler> suraHandelarList;
             arabicTextveiwid=itemView.findViewById(R.id.arabic_SuraNameTextviewid);
 
 
-
             itemView.setOnClickListener(this);
+            itemView.setOnCreateContextMenuListener(this);
         }
 
         @Override
         public void onClick(View v) {
             if(listner!=null){
                 int position=getAdapterPosition();
-                if(position!= RecyclerView.NO_POSITION){
+                if(position!=RecyclerView.NO_POSITION){
                     listner.OnItemClick(position);
                 }
             }
         }
 
+        @Override
+        public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+            menu.setHeaderTitle("Chose an action");
+            MenuItem saveitem=menu.add(Menu.NONE,1,1,"Save to Bookmark");
+
+            saveitem.setOnMenuItemClickListener(this);
+        }
+
+        @Override
+        public boolean onMenuItemClick(MenuItem item) {
+            if(listner!=null){
+                int position=getAdapterPosition();
+                if(position!=RecyclerView.NO_POSITION){
+                    switch (item.getItemId()){
+                        case 1:
+                            listner.onSave(position);
+                            return  true;
+                    }
+                }
+            }
+
+            return false;
+        }
     }
 
     public interface  OnItemClickListner{
         void OnItemClick(int position);
+        void onSave(int position);
     }
 
-    public void setOnItemClickListener(OnItemClickListner listener){
+    public void setOnItemClickListener(QuranAdapters.OnItemClickListner listener){
         this.listner=listener;
 
     }
 }
+

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:padding="10dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#FAE2E2"
-    android:layout_marginBottom="2dp"
-    android:layout_height="wrap_content">
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".AyatShowerActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/arabicTextviewid"
-        android:textSize="25sp"
+        android:id="@+id/ayat_arabicTextviewid"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#000"
         android:text="Md Sohrab hossain Sohel"
@@ -20,8 +20,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/banglaTranslateTextviewid"
-        android:textSize="17sp"
+        android:id="@+id/ayat_banglaTranslateTextviewid"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#000"
         android:text="Md Sohrab hossain Sohel"
@@ -31,8 +31,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/banglaTextviewid"
-        android:textSize="17sp"
+        android:id="@+id/ayat_banglaTextviewid"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#000"
         android:text="Md Sohrab hossain Sohel"
@@ -40,8 +40,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/englishTextview"
-        android:textSize="17sp"
+        android:id="@+id/ayat_englishTextview"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#000"
         android:text="Md Sohrab hossain Sohel"

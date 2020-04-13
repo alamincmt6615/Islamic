@@ -14,27 +14,29 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import alamin.c.islamicapp.DataHandeler.SuraValues;
+import alamin.c.islamicapp.DataHandeler.SaveAyatDataHandeler;
+import alamin.c.islamicapp.DataHandeler.SavedSuraNameHandeler;
 import alamin.c.islamicapp.R;
 
-public class SuraAdapter extends RecyclerView.Adapter<SuraAdapter.MyViewHolder> {
+public class SavedAyatAdapter extends RecyclerView.Adapter<SavedAyatAdapter.MyViewHolder> {
 
 
     private OnItemClickListner listner;
     private Context context;
-private List<SuraValues> suraValues;
+private List<SaveAyatDataHandeler> suraHandelarList;
 
-    public SuraAdapter(Context context, List<SuraValues> suraValues) {
+    public SavedAyatAdapter(Context context, List<SaveAyatDataHandeler> suraHandelarList) {
         this.context = context;
-        this.suraValues = suraValues;
+        this.suraHandelarList = suraHandelarList;
     }
+
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 
-        View view= LayoutInflater.from(context).inflate(R.layout.sura_shower_sample_layoute,parent,false);
+        View view= LayoutInflater.from(context).inflate(R.layout.sura_name_sample_layoute,parent,false);
 
 
 
@@ -43,12 +45,11 @@ private List<SuraValues> suraValues;
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        SuraValues suraValues1=suraValues.get(position);
+        SaveAyatDataHandeler suraHandelar=suraHandelarList.get(position);
 
-        holder.arabicTextview.setText("("+suraValues1.getAyahserial()+")"+suraValues1.getArabic());
-        holder.banglaTextview.setText("অর্থঃ   "+suraValues1.getBangla()+"\n");
-        holder.banglaTranslateTextview.setText("উচ্চারণঃ   "+suraValues1.getBanglaTranslate()+"\n");
-        holder.englishText.setText("Translate :  "+suraValues1.getEnglish()+"\n");
+        holder.valuesTextview.setText(suraHandelar.getSuraName());
+        holder.serialTextview.setText(suraHandelar.getAyatSerial());
+        holder.translateTextview.setText("আয়াত নংঃ "+suraHandelar.getAyatSerial());
 
 
 
@@ -56,25 +57,27 @@ private List<SuraValues> suraValues;
 
     @Override
     public int getItemCount() {
-        return suraValues.size();
+        return suraHandelarList.size();
     }
 
 
-    public class MyViewHolder  extends  RecyclerView.ViewHolder implements View.OnClickListener,View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener {
+    public class MyViewHolder  extends  RecyclerView.ViewHolder implements View.OnClickListener, View.OnCreateContextMenuListener, MenuItem.OnMenuItemClickListener{
 
-        private TextView arabicTextview;
-        private  TextView banglaTextview;
-        private  TextView banglaTranslateTextview;
-        private  TextView englishText;
+        private TextView valuesTextview;
+        private  TextView serialTextview;
+        private  TextView translateTextview;
+        private  TextView  arabicTextveiwid;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
 
-            arabicTextview=itemView.findViewById(R.id.arabicTextviewid);
-            banglaTextview=itemView.findViewById(R.id.banglaTextviewid);
-            banglaTranslateTextview=itemView.findViewById(R.id.banglaTranslateTextviewid);
-            englishText=itemView.findViewById(R.id.englishTextview);
+
+            valuesTextview=itemView.findViewById(R.id.sura_NameTextviewid);
+            serialTextview=itemView.findViewById(R.id.sura_SerialTextviewid);
+            translateTextview=itemView.findViewById(R.id.suraNameMeanignTextviewid);
+            arabicTextveiwid=itemView.findViewById(R.id.arabic_SuraNameTextviewid);
+
 
             itemView.setOnClickListener(this);
             itemView.setOnCreateContextMenuListener(this);
@@ -93,8 +96,7 @@ private List<SuraValues> suraValues;
         @Override
         public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
             menu.setHeaderTitle("Chose an action");
-            MenuItem deleteitem=menu.add(Menu.NONE,1,1,"Save to Bookmark");
-
+            MenuItem deleteitem=menu.add(Menu.NONE,1,1,"Delete");
             deleteitem.setOnMenuItemClickListener(this);
         }
 
@@ -105,8 +107,8 @@ private List<SuraValues> suraValues;
                 if(position!=RecyclerView.NO_POSITION){
                     switch (item.getItemId()){
                         case 1:
-                            listner.onSave(position);
-                            return  true;
+                            listner.onDelete(position);
+                            return true;
                     }
                 }
             }
@@ -117,10 +119,10 @@ private List<SuraValues> suraValues;
 
     public interface  OnItemClickListner{
         void OnItemClick(int position);
-        void onSave(int position);
+        void onDelete(int position);
     }
 
-    public void setOnItemClickListener(SuraAdapter.OnItemClickListner listener){
+    public void setOnItemClickListener(SavedAyatAdapter.OnItemClickListner listener){
         this.listner=listener;
 
     }

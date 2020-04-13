@@ -6,12 +6,22 @@ public class SuraValues {
     String banglaTranslate;
     String bangla;
     String ayahserial;
+    String english;
 
-    public SuraValues(String arabic, String banglaTranslate, String bangla,String ayahserial) {
+    public SuraValues(String arabic, String banglaTranslate, String bangla,String ayahserial,String english) {
         this.arabic = arabic;
         this.banglaTranslate = banglaTranslate;
         this.bangla = bangla;
         this.ayahserial=ayahserial;
+        this.english=english;
+    }
+
+    public String getEnglish() {
+        return english;
+    }
+
+    public void setEnglish(String english) {
+        this.english = english;
     }
 
     public String getArabic() {

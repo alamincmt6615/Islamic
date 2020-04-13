@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ParaWiseSuraShowerActivty"></activity>
+        <activity android:name=".AyatShowerActivity"></activity>
+        <activity android:name=".ParaWiseSuraShowerActivty" />
         <activity android:name=".ParaWiseSuraListActivity" />
         <activity android:name=".SuraShowerActivity" />
         <activity android:name=".Surah_ListActivity" />
